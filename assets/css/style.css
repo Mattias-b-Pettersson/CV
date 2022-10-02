@@ -354,6 +354,7 @@ background-color: rgba(25, 25, 25, 0.2);
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
+    background-color: #3498db;
 }
 
 /* ----------------------------------------------- MediaQueries */
