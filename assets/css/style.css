@@ -38,6 +38,10 @@
     background-color: #f4f4f4;
 }
 
+.ui-menu-color-github {
+    background-color: #9721c5;
+}
+
 /* ----------------------------------------------- Special padding/margin/text */
 
 h1, h2, h3, h4 {
