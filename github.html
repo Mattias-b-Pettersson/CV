@@ -52,69 +52,15 @@
         </div>
     </header>
     <section class="container-fliud">
-        <div class="row g-0">
-            <div class="col-md-4 bg-color-work-history section-column">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="history-heading uppercase">
-                            Tidigare jobb
-                        </h3>
-                    </div>
-                </div>
-                <div class="history-items">
-                    <div class="timeline-item" data-dates="Juli 2019 - nuvarande">
-                        <h4>Serviceförvaltningen Servicedesk, Region Stockholm</h4>
-                        <p>IT-support tekniker, Second Line/Back office</p>
-                    </div>
-                    <div class="timeline-item" data-dates="September 2018 - juni 2019">
-                        <h4>Sekretess belagd tjänst</h4>
-                        <p>IT-support tekniker</p>
-                    </div>
-                    <div class="timeline-item" data-dates="Januari 2018 - September 2018">
-                        <h4>Install Elteknik</h4>
-                        <p>Elektriker lärling</p>
-                    </div>
-                    <div class="timeline-item" data-dates="Januari 2017 - Februari 2018">
-                        <h4>MatHem</h4>
-                        <p>Förare</p>
-                    </div>
-                    <div class="timeline-item" data-dates="mars 2016 - februari 2017">
-                        <h4>Biltema</h4>
-                        <p>Butiksmedarbetare</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 bg-color-three-reasons section-column g-0">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="section-heading uppercase">
-                            Mina skills
-                        </h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="three-reasons-icon fa fa-tv" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">frontend</h4>
-                                <p>Jag är en Fullstack utvecklare med en bred kunskap både från livet och det tekniska intresset som jag tar med mig till varje projekt</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="three-reasons-icon fa fa-gears" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10">
-                                <h4 class="three-reasons-heading uppercase">backend</h4>
-                                <p>Jag är en Fullstack utvecklare med en bred kunskap både från livet och det tekniska intresset som jag tar med mig till varje projekt</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row bg-color-contact">
+            <div class="col">
+                <h3 class="contact-heading uppercase text-center">Här kan du se mina Github Projekt</h3>
+                <h5 class="uppercase text-center">Du kan även söka på andra profiler</h5>
+
+                <div class="center-form">
+                    <input type="text" id="gh-username" value="Mattias-b-Pettersson" oninput="fetchGithubInformation()">
+                    <div id="gh-user-data"></div>
+                    <div id="gh-repo-data"></div>
                 </div>
             </div>
         </div>     
