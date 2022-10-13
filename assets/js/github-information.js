@@ -62,6 +62,9 @@ function fetchGithubInformation(event) {
         $("#gh-repo-data").html(repoInformationHTML(repoData));
         if (errorResponse.status === 404) {
             $("#gh-user-data").html(`<h2>Ingen användare vid namn ${username} hittades</h2>`);
+        } else if(errorResponse.status === 403) {
+            var resetTime = new Date(errorResponse.getResponseHeader("x-RateLimit-Reset")*1000);
+            $("#gh-user-data").html(`<h4>För många requests, var vänligen vänta till ${resetTime.toLocaleDateString()}</h4>`);
         } else {
             console.error(errorResponse);
             $("#gh-user-data").html(`<h2>Error ${errorResponse.responseJSON.message} hittades</h2>`);
