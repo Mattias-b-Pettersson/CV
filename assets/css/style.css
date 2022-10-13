@@ -80,6 +80,14 @@ h1, h2, h3, h4 {
     margin-bottom: 40px;
 }
 
+body{
+    min-height: 100%;
+}
+
+body section {
+    min-height: 35vh;
+}
+
 /* ----------------------------------------------- heading */
 
 header {
@@ -167,6 +175,11 @@ header {
     margin: 0;
 }
 
+/* ----------------------------------------------- Github */
+
+#gh-username{
+    margin: 0 auto;
+}
 /* ----------------------------------------------- HOVER.CSS */
 
 .hvr-sweep-to-bottom:before {
